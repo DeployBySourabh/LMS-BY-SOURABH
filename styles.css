@@ -1,0 +1,43 @@
+:root {
+  --bg-light: #FFFADC;
+  --accent1: #B6F500;
+  --accent2: #A4DD00;
+  --accent3: #98CD00;
+}
+body {
+  background-color: var(--bg-light);
+  font-family: 'Segoe UI', sans-serif;
+}
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid #ddd;
+}
+.sidebar .nav-link {
+  color: #333;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.sidebar .nav-link.active {
+  background: var(--accent2);
+  color: #fff;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.module-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+.btn-primary {
+  background: var(--accent2);
+  border-color: var(--accent2);
+}
+.btn-primary:hover {
+  background: var(--accent3);
+  border-color: var(--accent3);
+}

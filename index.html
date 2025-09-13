@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SOURABH TECH INTITUTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <nav id="sidebar" class="sidebar d-none flex-column p-3">
+            <h4 class="mb-4">SOURABH TECH INTITUTE </h4>
+            <ul id="sidebarNav" class="nav nav-pills flex-column mb-auto">
+                <li><a class="nav-link" data-module="dashboard">Dashboard</a></li>
+                <li><a class="nav-link" data-module="courses">Courses</a></li>
+                <li><a class="nav-link" data-module="paths">Learning Paths</a></li>
+                <li><a class="nav-link" data-module="assessments">Assessments</a></li>
+                <li><a class="nav-link" data-module="calendar">Calendar</a></li>
+                <li><a class="nav-link" data-module="communication">Communication</a></li>
+                <li><a class="nav-link" data-module="content">Content Library</a></li>
+                <li><a class="nav-link" data-module="reports">Reports</a></li>
+                <li><a class="nav-link" data-module="users">Users</a></li>
+                <li><a class="nav-link" data-module="settings">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="flex-fill">
+            <nav class="navbar navbar-light bg-light px-3 d-flex justify-content-between">
+                <span id="welcomeText" class="fw-semibold"></span>
+                <button id="btnLogoutTop" class="btn btn-sm btn-outline-danger d-none">Logout</button>
+            </nav>
+            <main id="appContainer" class="p-4"></main>
+        </div>
+    </div>
+
+    <!-- Form modal -->
+    <div class="modal fade" id="formModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="formModalTitle" class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div id="formModalBody" class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button id="formModalSave" type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div id="confirmModalBody" class="modal-body">Are you sure?</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button id="confirmModalOk" type="button" class="btn btn-danger">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+<footer>
+    <CENTER>
+        <h6>Design and Devloped By SOURABH PARADKAR</h6>
+    </CENTER>
+</footer>
+
+</html>
